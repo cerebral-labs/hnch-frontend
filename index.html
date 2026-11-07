@@ -470,6 +470,10 @@
             padding: 20px 22px;
         }
 
+        .detail-info-cell:last-child {
+            grid-column: 1 / -1;
+        }
+
         .detail-info-cell .key {
             font-size: 10px;
             font-weight: 600;
@@ -725,6 +729,10 @@
 
         .form-group {
             margin-bottom: 18px;
+        }
+
+        #other-inviter-wrap {
+            margin-top: 12px;
         }
 
         .form-group label {
@@ -1703,10 +1711,6 @@
                             <div class="val">All United States<small>U.S. Apple ID for App Store availability</small></div>
                         </div>
                         <div class="detail-info-cell">
-                            <div class="key">Seats</div>
-                            <div class="val">Growing to 100+<small>First 30 onboard initially; target 50+ new admitted members / week, not just applications</small></div>
-                        </div>
-                        <div class="detail-info-cell">
                             <div class="key">Access</div>
                             <div class="val">App Store<small>iPhone / iOS only · U.S. Apple ID</small></div>
                         </div>
@@ -1776,21 +1780,20 @@
                     <div class="detail-section">
                         <h3 class="detail-section-title" style="font-size: 28px; font-weight: 800;">What you'll do</h3>
                         <ul>
-                            <li><strong>Complete hunches</strong> in Ping — up to 5 count each day toward your score.</li>
-                            <li><strong>Invite friends for extra points</strong> — earn points when friends you invite become active.</li>
-                            <li><strong>Stay on the list</strong> — complete at least 3 hunches each week.</li>
+                            <li><strong>Complete interactions in Ping.</strong> Pick a take that interests you, then start and finish the interaction. Up to 5 completed interactions count toward your score each day.</li>
+                            <li><strong>Invite friends to Ping.</strong> Help new users join and earn points when they become active.</li>
+                            <li><strong>Stay on the list.</strong> Complete at least 3 interactions each week and help at least 3 new users finish onboarding in Ping over the course of the program.</li>
                         </ul>
-                        <p>Submit weekly feedback to qualify that week and unlock invites. The goal is to admit 50+ new members each week and grow the community to 100+ members.</p>
+                        <p>Submit weekly feedback to qualify for scoring and unlock invites.</p>
                     </div>
 
                     <div class="detail-section">
                         <h3 class="detail-section-title" style="font-size: 28px; font-weight: 800;">Daily routine</h3>
-                        <p style="margin-top:0;">Complete hunches, share feedback, and invite friends if you’d like.</p>
+                        <p style="margin-top:0;">Complete interactions, share feedback, and help new users get started.</p>
                         <ul>
-                            <li><strong>Complete hunches</strong> — 1 point each; up to 5 count per day (max 35 hunch points per week).</li>
-                            <li><strong>Invite friends</strong> — each friend who completes a hunch on at least 3 separate days counts once (+10), in the week they hit that third day.</li>
+                            <li><strong>Complete interactions.</strong> Earn 1 point each, up to 5 per day and 35 per week.</li>
+                            <li><strong>Invite friends.</strong> Earn 10 points when a friend completes an interaction on their third separate day. Each friend counts once.</li>
                             <li><strong>Weekly feedback</strong> — required to qualify for scoring that week and to unlock invites. Feedback itself does not add points.</li>
-                            <li><strong>Stay on the list</strong> — complete at least 3 hunches each week. If you miss that minimum, your seat may return to the invite pool.</li>
                         </ul>
                     </div>
 
@@ -1799,16 +1802,15 @@
                         <div class="score-lanes">
                             <div class="score-lane">
                                 <h4>Personal</h4>
-                                <p>Your score = your hunch points + your activated invite points.</p>
+                                <p>Your score combines points from completed interactions and activated invites.</p>
                                 <ul>
-                                    <li>1 point per completed hunch. Up to 5 count each day · max 35 hunch points per week.</li>
-                                    <li>+10 per activated invite: a friend who completes a hunch on at least 3 separate days. Each friend counts once, in the week they complete their third qualifying day.</li>
-                                    <li>Highest total wins. Ties go to whoever completed a hunch on more days that week.</li>
+                                    <li>Earn 1 point per completed interaction, up to 5 points per day and 35 per week.</li>
+                                    <li>Earn 10 points per activated invite. A friend activates after completing an interaction on 3 separate days. They count once, in the week they complete their third day.</li>
+                                    <li>The highest total wins. Ties go to whoever completed an interaction on more days that week.</li>
                                 </ul>
                             </div>
                         </div>
                         <p class="score-note"><strong>Submit your weekly feedback</strong> to qualify for scoring that week and unlock invites. Feedback does not add points.</p>
-                        <p class="score-note"><strong>Stay on the list:</strong> complete at least 3 hunches each week. Invites can earn points but aren’t required to stay on the list.</p>
                     </div>
 
                     <div class="detail-section">
@@ -1821,19 +1823,15 @@
                     </div>
 
                     <div class="detail-section">
-                        <h3 class="detail-section-title" style="font-size: 28px; font-weight: 800;">Growth &amp; milestones</h3>
+                        <h3 class="detail-section-title" style="font-size: 28px; font-weight: 800;">Program milestones</h3>
                         <div class="milestone-grid">
                             <div class="milestone-card">
-                                <div class="m-name"><span>Week 1 ramp</span>First 30</div>
-                                <div class="m-desc">Nov 9 kickoff. Briefing on completing hunches and inviting friends. First weekly feedback unlocks invites. No weekly prize payouts in Week 1.</div>
+                                <div class="m-name"><span>Week 1</span>Kickoff</div>
+                                <div class="m-desc">On Nov 9, learn how to complete interactions and invite friends. Submit your first weekly feedback to unlock invites. Prizes begin in Week 2.</div>
                             </div>
                             <div class="milestone-card">
-                                <div class="m-name"><span>Weekly growth</span>50+ new members</div>
-                                <div class="m-desc">Target 50+ new admitted members each week via feedback-unlocked invites; applications alone do not count as joined members. An invite activates after the friend completes a hunch on at least 3 separate days.</div>
-                            </div>
-                            <div class="milestone-card">
-                                <div class="m-name"><span>Weekly total</span>Hunches + invites</div>
-                                <div class="m-desc">Score is hunch points plus activated invites. Up to 5 hunches count per day. Stay on the list by completing at least 3 hunches each week. Weekly feedback qualifies you and unlocks invites — it does not add points.</div>
+                                <div class="m-name"><span>Weekly score</span>Interactions + invites</div>
+                                <div class="m-desc">Earn points for completed interactions and activated invites. Submit feedback each week to qualify for scoring.</div>
                             </div>
                             <div class="milestone-card">
                                 <div class="m-name"><span>Launch reward</span>6 months free</div>
@@ -1849,15 +1847,15 @@
                                 <h3 class="detail-section-title" style="font-size: 28px; font-weight: 800;">How it runs</h3>
                                 <div class="detail-row">
                                     <span class="detail-label"><strong>Day 0 · Nov 9</strong></span>
-                                    <span class="detail-desc">First 30 onboarded into the iOS app via the App Store. Briefing on completing hunches and inviting friends. Leaderboard standings will appear when connected.</span>
+                                    <span class="detail-desc">Get started in the iOS app and learn how to complete interactions and invite friends. Leaderboard standings will appear when connected.</span>
                                 </div>
                                 <div class="detail-row">
                                     <span class="detail-label"><strong>Ongoing weeks</strong></span>
-                                    <span class="detail-desc">Rolling onboarding and weekly feedback. Starting Week 2: $120 total in weekly Amazon / Visa gift card awards. Monthly personal prizes: iPad mini, AirPods Pro and $100. Target 50+ new admitted members weekly.</span>
+                                    <span class="detail-desc">Rolling onboarding and weekly feedback. Starting Week 2: $120 total in weekly Amazon / Visa gift card awards. Monthly personal prizes: iPad mini, AirPods Pro and $100.</span>
                                 </div>
                                 <div class="detail-row">
                                     <span class="detail-label"><strong>Seat rule</strong></span>
-                                    <span class="detail-desc">Complete at least 3 hunches each week to stay on the list. If you miss that minimum, your seat may return to the invite pool.</span>
+                                    <span class="detail-desc">Complete at least 3 interactions each week and help at least 3 new users finish onboarding in Ping over the course of the program.</span>
                                 </div>
                                 <div class="detail-row">
                                     <span class="detail-label"><strong>Regions</strong></span>
@@ -1869,25 +1867,25 @@
                                 <h3 class="detail-section-title" style="font-size: 28px; font-weight: 800;">How you earn</h3>
                                 <div class="detail-row" style="border-top: none;">
                                     <span class="detail-desc" style="grid-column: 1 / -1; margin-bottom: 0.5rem;">
-                                        Your personal score adds up your hunch points and activated invite points. Weekly feedback qualifies you and unlocks invites; it does not add points.
+                                        Your personal score combines points from completed interactions and activated invites. Weekly feedback qualifies you for scoring and unlocks invites.
                                     </span>
                                 </div>
                                 <div class="detail-row">
                                     <span class="detail-label"><strong>Personal board</strong></span>
-                                    <span class="detail-desc">Your hunches + your activated invites. Weekly: 1st $50, 2nd $25, 3rd $15, and 4th–6th $10 each in Amazon / Visa gift cards, starting Week 2.</span>
+                                    <span class="detail-desc">Weekly prizes: 1st $50, 2nd $25, 3rd $15, and 4th–6th $10 each in Amazon / Visa gift cards, starting Week 2.</span>
                                 </div>
                                 <div class="detail-row">
                                     <span class="detail-label"><strong>Point rules</strong></span>
-                                    <span class="detail-desc">1 point per completed hunch · up to 5/day · max 35 hunch points/week. +10 per friend who completes a hunch on at least 3 separate days (counts once, in that week). Ties go to whoever completed a hunch on more days that week.</span>
+                                    <span class="detail-desc">Earn 1 point per completed interaction, up to 5 per day and 35 per week. Earn 10 points per friend who completes an interaction on 3 separate days. Each friend counts once, in the week they reach that third day. Ties go to whoever completed an interaction on more days that week.</span>
                                 </div>
                             </div>
 
                             <div class="detail-section">
                                 <h3 class="detail-section-title">Ground rules</h3>
                                 <ul>
-                                    <li>Complete hunches in Ping. You can also earn points by inviting friends who become active.</li>
-                                    <li>Your score is your hunch points plus any activated invite points.</li>
-                                    <li>Stay on the list by completing at least 3 hunches each week.</li>
+                                    <li>Pick a take that interests you, then start and finish the interaction in Ping.</li>
+                                    <li>Your score combines points from completed interactions and activated invites.</li>
+                                    <li>Complete at least 3 interactions each week and help at least 3 new users finish onboarding in Ping over the course of the program.</li>
                                     <li>Submit weekly feedback to qualify that week and unlock invites. Feedback does not add points.</li>
                                     <li>Obvious spam or empty actions can be zeroed by the team.</li>
                                     <li>This beta is about product learning. Incentivized usage is not proof of product-market fit on its own.</li>
@@ -1937,7 +1935,27 @@
 
                         <div class="form-group" id="fg-inviter">
                             <label for="f-inviter">Who invited you?</label>
-                            <select id="f-inviter" name="inviter" required><option value="">Select…</option><option value="Kendall">Kendall</option><option value="Sean">Sean</option><option value="Morgan">Morgan</option><option value="Emma">Emma</option><option value="Leqi">Leqi</option><option value="Sheirly">Sheirly</option><option value="Grace">Grace</option><option value="Lindsay">Lindsay</option><option value="Jessie">Jessie</option><option value="Ramzy">Ramzy</option><option value="April">April</option><option value="Daffa">Daffa</option></select>
+                            <select id="f-inviter" name="inviter" required>
+                                <option value="">Select…</option>
+                                <option value="Kendall">Kendall</option>
+                                <option value="Sean">Sean</option>
+                                <option value="Morgan">Morgan</option>
+                                <option value="Emma">Emma</option>
+                                <option value="Leqi">Leqi</option>
+                                <option value="Sheirly">Sheirly</option>
+                                <option value="Grace">Grace</option>
+                                <option value="Lindsay">Lindsay</option>
+                                <option value="Jessie">Jessie</option>
+                                <option value="Ramzy">Ramzy</option>
+                                <option value="April">April</option>
+                                <option value="Daffa">Daffa</option>
+                                <option value="Alice">Alice</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div id="other-inviter-wrap" hidden>
+                                <label for="other-inviter">Inviter’s name</label>
+                                <input type="text" id="other-inviter" name="other_inviter" pattern=".*\S.*" placeholder="Enter their name" disabled />
+                            </div>
                         </div>
 
                         <button type="submit" id="submit-btn" class="submit-btn">Preview — no submission</button>
@@ -1999,7 +2017,7 @@
                 <div class="leaderboard-header">
                     <div class="events-eyebrow" style="justify-content: center;">Standings</div>
                     <h1 class="leaderboard-title">Alpha Community <em>Leaderboard</em></h1>
-                    <p class="leaderboard-sub">Your personal score combines your hunch points and activated invite points. Live standings aren’t available in this preview.</p>
+                    <p class="leaderboard-sub">Your personal score combines points from completed interactions and activated invites. Live standings aren’t available in this preview.</p>
                     <div class="leaderboard-meta">
                         <span class="leaderboard-pill">Starts Nov 9–Dec 31, 2026 (estimated)</span>
                         <span class="leaderboard-pill">Preview · not live</span>
@@ -2098,9 +2116,19 @@
             otherText.required = other.checked;
             otherText.disabled = !other.checked;
         }
+
+        function syncOtherInviter() {
+            const isOther = document.getElementById('f-inviter').value === 'other';
+            const nameField = document.getElementById('other-inviter');
+            document.getElementById('other-inviter-wrap').hidden = !isOther;
+            nameField.required = isOther;
+            nameField.disabled = !isOther;
+        }
+
         function handlePreviewApply(e) {
             e.preventDefault();
             validateInterests();
+            syncOtherInviter();
             const form = document.getElementById('apply-form');
             if (!form.reportValidity()) return false;
             document.getElementById('apply-preview-msg').textContent = 'Preview only — applications are not submitted.';
@@ -2112,6 +2140,8 @@
             route();
             document.querySelectorAll('input[name="interests"]').forEach(c => c.addEventListener('change', validateInterests));
             validateInterests();
+            document.getElementById('f-inviter').addEventListener('change', syncOtherInviter);
+            syncOtherInviter();
         });
     </script>
 </body>
