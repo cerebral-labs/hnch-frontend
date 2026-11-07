@@ -12,7 +12,7 @@
         :root {
             --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
             --serif: Georgia, "Times New Roman", serif;
-            --panel: #fdfcfb;
+            --panel: #FFFBF4;
             --stamp: #191817;
             --stamp-soft: #f4f2ef;
             --ink: #121211;
@@ -1395,17 +1395,17 @@
         .ios-download {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 12px;
-            min-height: 64px;
+            justify-content: flex-start;
+            gap: 8px;
             margin-top: 24px;
-            padding: 18px 24px;
-            border-radius: 999px;
+            padding: 14px 18px;
+            border: 1px solid #000;
+            border-radius: 0;
             background: #000;
             color: #fff;
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 1.4;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.5;
             text-decoration: none;
             transition: background 160ms;
         }
@@ -1637,12 +1637,8 @@
 
             <div class="event-card-list">
                 <a class="event-card" href="#/event/private-beta-nov-2026">
-                    <div class="event-card-stamp">
-                        <span class="square"></span>
-                        <span class="text">Growing to 100+ founding members</span>
-                    </div>
-                    <h2 class="event-card-title">Ping Founding <em>Community</em></h2>
-                    <p class="event-card-desc">Meet Ping’s first power users. Explore topics, build your tracking list, turn your interests into ideas, and help influence the product through real daily use and conversations.</p>
+                    <h2 class="event-card-title">Alpha Community</h2>
+                    <p class="event-card-desc">Join as one of our earliest users. Discover opportunities and takes around your interests, and help iterate on the product through real, active use and feedback loops.</p>
                     <div class="event-card-meta">
                         <div class="event-card-detail-list">
                             <div class="event-card-detail-item">
@@ -1652,10 +1648,6 @@
                             <div class="event-card-detail-item">
                                 <span class="key">Regions</span>
                                 <span class="val">All United States</span>
-                            </div>
-                            <div class="event-card-detail-item">
-                                <span class="key">Seats</span>
-                                <span class="val">100+ community goal · 50+ new members / week</span>
                             </div>
                         </div>
                         <div class="event-card-arrow">
@@ -1669,7 +1661,7 @@
                 <div class="event-card event-card-ghost">More events soon</div>
             </div>
             <a class="ios-download" href="https://apps.apple.com/us/app/ping-upside-on-your-favorites/id6764042802" target="_blank" rel="noopener noreferrer" aria-label="Download PING for iOS on the App Store">
-                <img src="assets/apple-icon.svg" width="24" height="24" alt="" aria-hidden="true" />
+                <img src="assets/apple-icon.svg" width="16" height="16" alt="" aria-hidden="true" />
                 <span>Download for iOS</span>
             </a>
         </section>
