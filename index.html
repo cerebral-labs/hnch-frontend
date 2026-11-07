@@ -1379,19 +1379,6 @@
             }
         }
 
-        .preview-banner {
-            background: var(--ink);
-            color: #fff;
-            text-align: center;
-            padding: 10px 16px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-        }
-        .preview-banner span {
-            color: var(--stamp);
-        }
         .rule-note {
             display: inline-block;
             margin-left: 8px;
@@ -1405,14 +1392,32 @@
             text-transform: uppercase;
             vertical-align: middle;
         }
-        .hosting-note {
+        .ios-download {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            min-height: 64px;
             margin-top: 24px;
-            padding: 14px 18px;
-            border: 1px dashed var(--hairline);
-            background: rgba(255,255,255,0.8);
-            font-size: 12px;
-            color: var(--muted);
-            line-height: 1.5;
+            padding: 18px 24px;
+            border-radius: 999px;
+            background: #000;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+            text-decoration: none;
+            transition: background 160ms;
+        }
+        .ios-download img {
+            flex-shrink: 0;
+        }
+        .ios-download:hover {
+            background: #242424;
+        }
+        .ios-download:focus-visible {
+            outline: 2px solid #000;
+            outline-offset: 4px;
         }
         .brand-mark {
             height: 28px;
@@ -1473,12 +1478,6 @@
 
 
         /* Editorial theme */
-        .preview-banner {
-            background: var(--paper);
-            color: var(--muted);
-            box-shadow: inset 0 -1px var(--hairline);
-        }
-
         header { box-shadow: inset 0 -1px var(--rule); }
         .brand-mark rect { fill: var(--ink); }
         .brand-mark text { fill: var(--ink); font-style: normal; font-weight: 700; }
@@ -1586,8 +1585,7 @@
 
         .interest-options input[type=checkbox] { accent-color: var(--ink); }
 
-        .preview-notice,
-        .hosting-note {
+        .preview-notice {
             background: var(--paper);
             border: 1px solid var(--hairline);
         }
@@ -1620,7 +1618,6 @@
 </style>
 </head>
 <body>
-    <div class="preview-banner">Website preview · applications and leaderboard not connected</div>
     <header>
         <a class="brand" href="#/">
             <svg class="brand-mark" viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ping">
@@ -1630,10 +1627,6 @@
             <span class="divider"></span>
             <span class="label">Events</span>
         </a>
-        <div class="meta">
-            <span class="dot"></span>
-            <span>Private · Invitation only</span>
-        </div>
     </header>
 
     <main>
@@ -1675,7 +1668,10 @@
 
                 <div class="event-card event-card-ghost">More events soon</div>
             </div>
-            <div class="hosting-note">Website preview · applications and leaderboard not connected. Live status checks and the App Store link are not wired here.</div>
+            <a class="ios-download" href="https://apps.apple.com/us/app/ping-upside-on-your-favorites/id6764042802" target="_blank" rel="noopener noreferrer" aria-label="Download PING for iOS on the App Store">
+                <img src="assets/apple-icon.svg" width="24" height="24" alt="" aria-hidden="true" />
+                <span>Download for iOS</span>
+            </a>
         </section>
 
         <section id="view-event" class="view">
@@ -1707,7 +1703,7 @@
                         </div>
                         <div class="detail-info-cell">
                             <div class="key">Access</div>
-                            <div class="val">App Store<small>iPhone / iOS only · U.S. Apple ID · download link to be added</small></div>
+                            <div class="val">App Store<small>iPhone / iOS only · U.S. Apple ID</small></div>
                         </div>
                     </div>
 
