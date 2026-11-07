@@ -198,6 +198,7 @@
         }
 
         .event-card-list {
+            container: event-cards / inline-size;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
             gap: 24px;
@@ -1393,12 +1394,12 @@
             vertical-align: middle;
         }
         .ios-download {
+            grid-column: 1;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             gap: 8px;
-            margin-top: 24px;
-            padding: 14px 18px;
+            padding: 7px 7px 7px 18px;
             border: 1px solid #000;
             border-radius: 0;
             background: #000;
@@ -1411,6 +1412,21 @@
         }
         .ios-download img {
             flex-shrink: 0;
+        }
+        .ios-download-arrow {
+            display: grid;
+            place-items: center;
+            flex: 0 0 32px;
+            height: 32px;
+            margin-left: auto;
+            background: #fff;
+            color: #000;
+        }
+        /* Two 360px cards and their 24px gap. */
+        @container event-cards (min-width: 744px) {
+            .ios-download {
+                grid-column: 1 / span 2;
+            }
         }
         .ios-download:hover {
             background: #242424;
@@ -1659,11 +1675,16 @@
                 </a>
 
                 <div class="event-card event-card-ghost">More events soon</div>
+                <a class="ios-download" href="https://apps.apple.com/us/app/ping-upside-on-your-favorites/id6764042802" target="_blank" rel="noopener noreferrer" aria-label="Download PING for iOS on the App Store">
+                    <img src="assets/apple-icon.svg" width="16" height="16" alt="" aria-hidden="true" />
+                    <span>Download for iOS</span>
+                    <span class="ios-download-arrow" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H8M17 7V16" />
+                        </svg>
+                    </span>
+                </a>
             </div>
-            <a class="ios-download" href="https://apps.apple.com/us/app/ping-upside-on-your-favorites/id6764042802" target="_blank" rel="noopener noreferrer" aria-label="Download PING for iOS on the App Store">
-                <img src="assets/apple-icon.svg" width="16" height="16" alt="" aria-hidden="true" />
-                <span>Download for iOS</span>
-            </a>
         </section>
 
         <section id="view-event" class="view">
